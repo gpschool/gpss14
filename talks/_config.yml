@@ -1,0 +1,25 @@
+# Site settings
+title: Gaussian Process Summer School 2014
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  The 2014 Gaussian Process Summer School held at the University of Sheffield.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://gpss.cc" # the base hostname & protocol for your site
+twitter_username: datascienceshef
+github_username:  SheffieldML
+
+youtube:
+  height: 315
+  width: 560
+conference:
+  name: Gaussian Process Summer School
+  location: University of Sheffield, UK
+  year: 2014
+  dates:
+  - {date: 15, day: Monday, month: September, year: 2014}
+  - {date: 16, day: Tuesday, month: September, year: 2014}
+  - {date: 17, day: Wednesday, month: September, year: 2014}
+  - {date: 18, day: Thursday, month: September, year: 2014}
+  
+# Build settings
+markdown: kramdown
