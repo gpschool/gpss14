@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>gpss14 by gpschool</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>gpss14</h1>
+        <p>Gaussian Process Summer School 2014</p>
+
+        <p class="view"><a href="https://github.com/gpschool/gpss14">View the Project on GitHub <small>gpschool/gpss14</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/gpschool/gpss14/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/gpschool/gpss14/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/gpschool/gpss14">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>University of Sheffield, UK
+ 15th - 17th September 2014</p>
+
+<h2>
+<a id="monday-15th-september" class="anchor" href="#monday-15th-september" aria-hidden="true"><span class="octicon octicon-link"></span></a>Monday 15th September</h2>
+
+<p>{% for slot in site.data.gpss14 %}
+{% if slot.date == 15 %}
+{% if slot.start %}{{ slot.start }}{% if slot.end %}-{{ slot.end }} {% endif %}{% endif %}{% if slot.pdf %}<a href="%7B%7B%20slot.pdf%20%7D%7D">{{ slot.title }}</a>{% else %}{{ slot.title }}{% endif %}{% if slot.speaker %}, {{ slot.speaker }}{% endif %}{% if slot.institution %}, {{ slot.institution }}{% endif %}
+{% endif %}
+{% endfor %}</p>
+
+<h2>
+<a id="monday-15th-september-1" class="anchor" href="#monday-15th-september-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Monday 15th September</h2>
+
+<p>8:00-9:00   <strong>Arrivals</strong></p>
+
+<p>9:00-10:30   <strong>Introduction to GPs</strong> [<a href="./talks/gp_gpss14_session1.pdf">Lecture Slides</a>]<br>
+               Neil Lawrence, University of Sheffield</p>
+
+<p>10:30-11:00   <strong>Coffee Break</strong></p>
+
+<p>11:00-12:30   <strong>Solving Challenging Non-linear Regression Problems by Manipulating a Gaussian Distribution</strong> [<a href="http://mlg.eng.cam.ac.uk/carl/talks/sheffield2.pdf">Lecture Slides</a>]<br>
+                Carl E. Rasmussen, University of Cambridge</p>
+
+<p>12:30-13:15   <strong>Lunch Break</strong></p>
+
+<p>13:15-15:30   <strong>Lab Session 1</strong> Gaussian Process Models with GPy [<a href="./talks/GPSS_Lab1.ipynb">ipython notebook</a>]</p>
+
+<p>15:30-16:00   <strong>Tea Break</strong></p>
+
+<p>16:00-17:00   <strong>Building Bayesian models: Why bother if you don't believe?</strong> [<a href="./talks/BuildingBayesianModels.pdf">Lecture Slides</a>]<br>
+                Dan Cornford, Aston University</p>
+
+<h2>
+<a id="tuesday-16th-september" class="anchor" href="#tuesday-16th-september" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tuesday 16th September</h2>
+
+<p>8:30-9:00   <strong>Arrivals</strong></p>
+
+<p>9:00-10:30   <strong>Fitting Covariance and Multi-output Gaussian Processes</strong> [<a href="./talks/gp_gpss14_session2.pdf">Lecture Slides</a>]
+               Neil Lawrence, University of Sheffield</p>
+
+<p>10:30-11:00   <strong>Coffee Break</strong></p>
+
+<p>11:00-12:00   <strong>Sparse Gaussian Processes</strong> [<a href="./talks/sparse_GPs.pdf">Lecture Slides</a>][<a href="./talks/demo_sparse.ipynb">ipython notebook to appear</a>]
+                James Hensman, University of Sheffield</p>
+
+<p>12:00-12:45   <strong>Expectation Propagation</strong> [<a href="./talks/ep.pdf">Lecture Slides</a>]
+                Ricardo Andrade, University of Sheffield</p>
+
+<p>12:45-13:30   <strong>Lunch Break</strong></p>
+
+<p>13:30-15:30   <strong>Lab Session 2</strong> Gaussian Process for Classification and Sparse Gaussian Processes [<a href="./talks/GPSS_Lab2.ipynb">ipython notebook</a>]</p>
+
+<p>15:30-16:00   <strong>Tea Break</strong></p>
+
+<p>16:00-17:30   <strong>Machine Learning, Probabilistic Inference, System Identification and Control</strong> [<a href="http://mlg.eng.cam.ac.uk/carl/talks/sheffield3.pdf">Lecture Slides</a>]<br>
+                Carl E. Rasmussen, University of Cambridge</p>
+
+<p>18:00-20:00   <strong>Social Event: Kelham Brewery Tour</strong></p>
+
+<h2>
+<a id="wednesday-17th-september" class="anchor" href="#wednesday-17th-september" aria-hidden="true"><span class="octicon octicon-link"></span></a>Wednesday 17th September</h2>
+
+<p>8:30-9:00   <strong>Arrivals</strong></p>
+
+<p>9:00-10:30   <strong>Big model configuration with Bayesian quadrature</strong> [<a href="./talks/quadrature_tutorial_GPSS.pdf">Lecture Slides</a>]<br>
+               Mike A. Osborne, University of Oxford</p>
+
+<p>10:30-11:00   <strong>Coffee Break</strong></p>
+
+<p>11:00-12:00   <strong>Latent Variable Models with Gaussian Processes</strong> [<a href="./talks/gp_gpss14_session3.pdf">Lecture Slides</a>]
+                Neil Lawrence, University of Sheffield</p>
+
+<p>12:00-13:00   <strong>Understanding the Evidence</strong> [<a href="">Lecture Slides</a>]
+                Joaquin Quiñonero Candela, Facebook</p>
+
+<p>13:00-13:30   <strong>Lunch Break</strong></p>
+
+<p>13:30-15:30   <strong>Lab Session 3</strong> Latent Variable Models [<a href="./talks/GPSS_Lab3.ipynb">ipython notebook</a>]</p>
+
+<p>14:00-15:00 [Optional]   <strong>Examples of Machine Learning and Data Science at Facebook</strong> (Stephenson LT01)\
+                           Joaquin Quiñonero Candela, Facebook</p>
+
+<p>15:30-16:00   <strong>Tea Break</strong></p>
+
+<p>16:00-17:00   <strong>Gaussian process approximation for time-series</strong> [<a href="./talks/gp-approximation.pdf">Lecture Slides</a>]
+                Richard E. Turner, University of Cambridge</p>
+
+<p>18:00-20:00   <strong>Social Event: Kelham Brewery Tour</strong></p>
+
+<h2>
+<a id="thursday-18th-september" class="anchor" href="#thursday-18th-september" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thursday 18th September</h2>
+
+<p><a href="../gpfe14/">Feature Extraction with Gaussian Processes Workshop</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/gpschool">gpschool</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-62991754-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
