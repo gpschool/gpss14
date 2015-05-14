@@ -1,7 +1,5 @@
 ---
-layout: page
-title: Gaussian Process Summer School, 2014
-tagline: Sheffield Gaussian process summer school
+layout: default
 date1: 15
 month1: September
 day2: 16
@@ -17,7 +15,7 @@ University of Sheffield, UK
 ## Monday 15th September
 
 
-{% for slot in site.data.gpss14 %}
+{% for slot in site.data.lectures %}
 {% if slot.date == 15 %}
 {% if slot.start %}{{ slot.start }}{% if slot.end %}-{{ slot.end }} {% endif %}{% endif %}{% if slot.pdf %}[{{ slot.title }}]({{ slot.pdf }}){% else %}{{ slot.title }}{% endif %}{% if slot.speaker %}, {{ slot.speaker }}{% endif %}{% if slot.institution %}, {{ slot.institution }}{% endif %}
 {% endif %}
