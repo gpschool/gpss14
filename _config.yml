@@ -35,21 +35,18 @@ conference:
   venue: The University of Sheffield
   location: Sheffield, UK
   name: Gaussian Process Summer School
-  year: 2015
-  month: September
-  hosts:
-  organizers:
-  - {name: Neil Lawrence, url: "http://inverseprobability.com"}
-  - {name: Zhenwen Dai, url: "http://staffwww.dcs.shef.ac.uk/people/Z.Dai/"}
-  - {name: Sheffield ML Group, url: "http://sheffieldml.github.io"}
-  name: Gaussian Process Summer School
-  location: University of Sheffield, UK
   year: 2014
+  chairs:
+  - type: Organizers
+    people:
+    - {given: Neil, family: Lawrence, url: "http://inverseprobability.com"}
+    - {given: Zhenwen, family: Dai, url: "http://staffwww.dcs.shef.ac.uk/people/Z.Dai/"}
+    - {given: Sheffield ML Group, url: "http://sheffieldml.github.io"}
   dates:
-  - {date: 15, day: Monday, month: September, year: 2014}
-  - {date: 16, day: Tuesday, month: September, year: 2014}
-  - {date: 17, day: Wednesday, month: September, year: 2014}
-  - {date: 18, day: Thursday, month: September, year: 2014}
+  - 2014-09-15
+  - 2014-09-16
+  - 2014-09-17
+  - 2014-09-18
 
 previous_meeting:
   name: GPSS Winter 2014
