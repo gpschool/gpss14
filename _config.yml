@@ -26,6 +26,17 @@ youtube:
   width: 560
 
 conference:
+  draft: False
+  hide_tentative: True
+  hosts:
+  short_name: GPSS
+  full_name:  Gaussian Process Summer School  
+  room: 
+  venue: The University of Sheffield
+  location: Sheffield, UK
+  name: Gaussian Process Summer School
+  year: 2015
+  month: September
   hosts:
   organizers:
   - {name: Neil Lawrence, url: "http://inverseprobability.com"}
