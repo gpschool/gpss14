@@ -1,18 +1,8 @@
 ---
-layout: default
+layout: home
 ---
 
 
-**{% if site.conference.room %}{{site.conference.room}}, {%endif%}{{site.conference.venue}}, {{ site.conference.location }}**,
-{% assign startdate = site.conference.dates | first %}
-{% assign enddate = site.conference.dates | last %}
-{% assign startmonth = startdate | date: '%m' %}
-{% assign endmonth = enddate | date: '%m' %}
-{% if startmonth == endmonth %}
-{{ startdate | date: '%d' }} - {{ enddate | date: '%d'}} {{ enddate | date: '%B' }} {{ enddate | date: '%Y' }}<br>
-{% else %}
-{{ startdate | date: '%d' }} {{ startdate | date: '%B' }} - {{ enddate | date: '%d'}} {{ enddate | date: '%B' }} {{ enddate | date: '%Y' }}<br>
-{% endif %}
 {% if site.conference.schoolphoto %}
 ![](./assets/{{ site.conference.schoolphoto }})
 {% endif %}
