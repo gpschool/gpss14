@@ -30,6 +30,10 @@ conference:
   - {date: 16, day: Tuesday, month: September, year: 2014}
   - {date: 17, day: Wednesday, month: September, year: 2014}
   - {date: 18, day: Thursday, month: September, year: 2014}
-  
+
+previous_meeting:
+  name: GPSS Winter 2014
+  url: "https://gpss.cc/gpws14"
+
 # Build settings
 markdown: kramdown
